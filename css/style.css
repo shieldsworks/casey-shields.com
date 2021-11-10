@@ -1,0 +1,26 @@
+*{
+    background-color: #fff;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color: #a5a58d;
+    padding: 10px;
+}
+hr{
+    color: #a5a58d;
+}
+a{
+    color: #a5a58d;
+    text-decoration: none;
+    border: #a5a58d solid 2px;
+    border-radius: 5px;
+    padding: 5px 10px;   
+}
+div{
+    padding: 20px;
+}
+p{
+    color: #fff;
+    background-color: #a5a58d;
+}
