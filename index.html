@@ -2,39 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
     <title>Casey Shields</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div id="header" role="header">
-        <h1 class="p-name entry-title" property="headline">
-            <a href="./index.html">Casey's Homepage</a>
-        </h1>
-        <img src="img/profile_square.JPG" alt="profile">
-    </div>
-    <div id="main" role="main">
-        <article id="article" class="h-entry hentry" lang="en">
-            <div class="e-summary entry-summary" property="description">
-                Hello. I'm Casey, and this is my little spot on the web.
-            </div>
-            <h2 id="about-me">Contact</h2>
-            <p>The best way to reach me is by
-                <a href="mailto:casey@shieldsworks.com">email</a>
-                or <a href="https://twitter.com/ShieldsWorks">Twitter</a>. I have other sites for my
-                <a href="https://www.shieldsworks.com">photography</a>, <a
-                    href="www.skyriterchronicles.com">typewriters</a> and
-                <a href="#">sailing</a>. I am constantly searching for
-                additions to my RSS feed.
-            </p>
-        </article>
-    </div>
-    <div id="footer" role="contentinfo">
-        <p></p>
-    </div>
+    <main class="h-card" rel="author">
+        <div id="header" role="header">
+            <h1 class="p-name entry-title" property="headline">
+                <a href="./index.html">Casey's Homepage</a>
+            </h1>
+            <img src="img/profile_square.JPG" alt="profile">
+        </div>
+        <div id="main" role="main">
+            <article id="article" class="h-entry hentry" lang="en">
+                <div class="e-summary entry-summary" property="description">
+                    Hello. I'm Casey, and this is my little spot on the web.
+                </div>
+                <h2 id="about-me">Contact</h2>
+                <p>The best way to reach me is by
+                    <a href="mailto:casey@shieldsworks.com">email</a>
+                    or <a href="https://twitter.com/ShieldsWorks">Twitter</a>. I have other sites for my
+                    <a href="https://www.shieldsworks.com">photography</a>, <a
+                        href="www.skyriterchronicles.com">typewriters</a> and
+                    <a href="#">sailing</a>. I am constantly searching for
+                    additions to my RSS feed.
+                </p>
+            </article>
+        </div>
+        <div id="footer" role="contentinfo">
+            <p></p>
+        </div>
+    </main>
 </body>
 
 </html>
