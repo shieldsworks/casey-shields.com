@@ -1,5 +1,5 @@
-# hello_world
+# casey-shields.com
 
-Hello. 
+My personal website where I'm learning. 
 
 
