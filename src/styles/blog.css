@@ -1,7 +1,7 @@
 :root {
   --font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  --font-body: 'IBM Plex Sans', var(--font-fallback);
-  --font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+  --font-body: 'fira sans', var(--font-fallback);
+  --font-mono: 'fira sans', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
     'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 
   --color-white: #fff;
@@ -284,9 +284,8 @@ blockquote .source {
 }
 .site-footer{
   width: 100%;
-  margin-top: 5em;
+  margin-top: 1em;
   padding: 1em 0;
-  border-top: 1px solid #212529;
   }
   .u-photo{
       width: 5.5em;
@@ -294,9 +293,42 @@ blockquote .source {
       margin-right: 0.75em;
       text-align: center;
       border-radius: 50%;
-      float: left;
+      float: inline-start;
   }
   
   .p-note{
   display: none;
   }
+  header {
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-bg-offset);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .content :global(main > * + *) {
+    margin-top: 1rem;
+  }
+
+  .intro {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 4px solid var(--theme-divider);
+  }
+
+  .intro > * {
+    margin: 0;
+  }
+
+  .latest {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
