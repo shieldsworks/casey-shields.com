@@ -1,5 +1,5 @@
 # casey-shields.com
 
-My personal website where I'm learning. 
+My personal website. 
 
 
