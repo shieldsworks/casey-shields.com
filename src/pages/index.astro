@@ -41,28 +41,29 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
     <BlogHeader />
     <div class="wrapper">
       <main class="content">
+      <!--
         <section class="intro">
           <h1 class="latest">{title}</h1>
           <p>{description}</p>
         </section>
+        -->
         <article>
             <p>
                 Hello. I'm Casey, and this is my little spot on the web.
             </p>
+            <br>
             <p>I have other sites for my
                 <a href="https://www.shieldsworks.com">photography</a>, <a
                     href="https://www.skyriterchronicles.com">typewriters</a> and
-                <a href="https://www.sailingdash.com">sailing</a> using Squarespace or Wordpress, but this is a blog for
+                <a href="https://www.sailingdash.com">sailing</a> using Squarespace or Wordpress, but this is my blog for
                 learning web development. I am constantly searching for
                 additions to my RSS feed.
             </p>
-          
+          <br>
             <p>
                 As a cop since 2007, my personal and professional commitments encourage a voice around peace, kindness, and protection of the most vulnerable. You may find that voice here, as well.
             </p>
-        </article>
-    
-        <article>
+      <br>
             <p>
                 Currently: Learning HTML, CSS and Javascript. This code was written on VSCode with Astro, pushed to Github, and deployed with the Netlify Starter plan (free). I tinker/code/write in my spare time, supported by Udemy and YouTube. I'm shooting for the cheapest, indieweb inspired, coded-from-scratch, personal site. I hope we can connect... somehow..
             </p>
@@ -71,8 +72,6 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
         <section aria-label="Blog post list">
           {allPosts.map(p => <BlogPostPreview post={p} />)}
         </section>
-        
-
       </main>
     </div>
     <footer class="site-footer h-card" role="contentinfo">
@@ -81,10 +80,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
             Cop in the Bay Area since 2007. Photographer, writer, and developer. Owner of ShieldsWorks, LLC.
         </p>
         <p>
-            No Instagram or Facebook, but you can find
-            me on <a href="https://twitter.com/ShieldsWorks">Twitter</a> and <a
-                href="https://github.com/shieldsworks">Github</a>. The best way to reach me is by
-            <a href="mailto:casey@shieldsworks.com">email.
+            No Instagram or Facebook, but you can find me on <a href="https://twitter.com/ShieldsWorks">Twitter</a> and <a href="https://github.com/shieldsworks">Github</a>. The best way to reach me is by <a href="mailto:casey@shieldsworks.com">email.
         </p>
     </footer>
   </body>

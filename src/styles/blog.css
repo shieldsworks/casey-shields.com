@@ -284,6 +284,7 @@ blockquote .source {
 }
 .site-footer{
   width: 100%;
+  display: flex;
   margin-top: 1em;
   padding: 1em 0;
   }
@@ -293,7 +294,7 @@ blockquote .source {
       margin-right: 0.75em;
       text-align: center;
       border-radius: 50%;
-      float: inline-start;
+      
   }
   
   .p-note{
@@ -331,4 +332,5 @@ blockquote .source {
     font-size: 2.5rem;
     font-weight: 700;
   }
+
   
