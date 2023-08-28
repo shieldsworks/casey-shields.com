@@ -67,10 +67,11 @@ border-top: 1px solid #212529;
 }
 .u-photo{
     width: 5.5em;
-    height: 5.5em;
+    height: 5.5em;  
     margin-right: 0.75em;
     text-align: center;
     border-radius: 50%;
+    border: #212529 solid 1px;
     float: left;
 }
 
