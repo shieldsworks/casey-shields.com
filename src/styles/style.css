@@ -1,80 +1,69 @@
-
-
-body{
-    background-color: #f8f9fa;
-    font-family: 'fira sans',Helvetica,sans-serif;
-    font-weight: 300;
-    margin: 0 auto;
-    padding: 1em;
-    max-width: 45em;
-    line-height: 1.5em;
-    letter-spacing: 0.03em;
-    box-sizing: border-box;
-}
-.site-header{
-    padding: 30px;
-    font-weight: medium;
-    font-size: 175%;
-    letter-spacing: 1px;
-    font-variant: small-caps;
-    text-align: center;
-}
-.site-header a{
+/* Base styles */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
     margin: 0;
     padding: 0;
-    color: #212529;
-    letter-spacing: 2px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  a {
+    color: #0066cc;
     text-decoration: none;
-}
-.site-header a:hover{
-    text-decoration: none;
-    color: #fca311;
-}
-
-h1, h2{
-    font-size: bold;
-    color: #212529;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 24px 0px;
-    font-variant: small-caps;
-}
-
-
-a{
-    color: #fca311;
-    text-decoration: none;
-}
-a:hover{
+  }
+  
+  a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 0.1rem;
-    text-decoration-color: #212529;
-}
-
-p{
-    color: #212529;
-    font-size: medium;
+  }
+  
+  /* Layout */
+  header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
     text-align: center;
-    max-width: 75%;
-    margin: auto;
-}
-
-.site-footer{
-width: 100%;
-margin-top: 5em;
-padding: 1em 0;
-border-top: 1px solid #212529;
-}
-.u-photo{
-    width: 5.5em;
-    height: 5.5em;  
-    margin-right: 0.75em;
-    text-align: center;
+  }
+  
+  main {
+    width: 85%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Avatar styles */
+  .avatar {
+    display: block;
+    margin: 0 auto 20px;
     border-radius: 50%;
-    border: #212529 solid 1px;
-    float: left;
-}
-
-.p-note{
-display: none;
-}
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* Media queries for responsive design */
+  @media (max-width: 600px) {
+    main {
+      width: 95%;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
