@@ -1,73 +1,26 @@
 ---
-// Component Imports
-import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
-
-interface MarkdownFrontmatter {
-  publishDate: number;
-}
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'Casey Shields';
-let description = 'My Personal Website';
-let permalink = 'https://casey-shields.com/';
-
-// Data Fetching: List all Markdown posts in the repo.
-
-let allPosts = await Astro.fetchContent('./posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+// Frontmatter script area, where you can import components and define page-level JavaScript
+import Avatar from '../components/Avatar.astro';
 ---
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={description} permalink={permalink} />
-    <link rel="stylesheet" href={Astro.resolve('../styles/blog.css')} />
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-</style>
-  </head>
-  <body>
-    <BlogHeader />
-    <div class="wrapper">
-      <main class="content">
-        <section class="intro">
-          <h1 class="latest">{title}</h1>
-          <!--
-          <p>{description}</p>
-          -->
-        </section>
-        <article>
-            
-            <p>
-                Currently: Learning HTML, CSS and Javascript. Sailing the San Francisco Bay Area.
-            </p>
-            <br>
-        </article>
-        <section aria-label="Blog post list">
-          {allPosts.map(p => <BlogPostPreview post={p} />)}
-        </section>
-      </main>
-    </div>
-    <footer class="site-footer h-card" role="contentinfo">
-        <img class="u-photo" src="img/profile_square.JPG" alt="photo of Casey Shields">
-        
-        <p class="p-note">
-            Cop in the Bay Area since 2007. Photographer, writer, and developer. Owner of ShieldsWorks, LLC.
-        </p>
-        <p>
-            No Instagram or Facebook, but I'm  on <a href="https://twitter.com/ShieldsWorks">Twitter</a> and <a href="https://github.com/shieldsworks">Github</a>. The best way to reach me is by <a href="mailto:casey@shieldsworks.com">email.
-        </p>
-    </footer>
-  </body>
+
+<html>
+<head>
+<link rel="stylesheet" href="/styles/style.css">
+  <title>Casey Shields</title>
+</head>
+<body>
+  <header>
+    <Avatar src="/img/profile_square.JPG" alt="Casey Shields" />
+    <h1>Casey Shields</h1>
+  </header>
+  <main>
+    <p>Hi. My name is Casey Shields. I am a sergeant at the Contra Costa County Office of the Sheriff assigned to the Special Victims Unit. I am a husband, father, and sailor in the San Francisco Bay. I am also digging into software development. I am happy to meet you.</p>
+    <ul>
+      <li><a href="https://twitter.com/shieldsworks">Twitter</a></li>
+      <li><a href="https://github.com/shieldsworks">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/casey-shields-034309294/">LinkedIn</a></li>
+      <!-- Add more links as needed -->
+    </ul>
+  </main>
+</body>
 </html>
