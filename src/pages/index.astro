@@ -9,18 +9,23 @@ import Avatar from '../components/Avatar.astro';
   <title>Casey Shields</title>
 </head>
 <body>
-  <header>
-    <Avatar src="/img/profile_square.JPG" alt="Casey Shields" />
-    <h1>Casey Shields</h1>
-  </header>
-  <main>
-    <p>Hi. My name is Casey Shields. I am a sergeant at the Contra Costa County Office of the Sheriff assigned to the Special Victims Unit. I am a husband, father, and sailor in the San Francisco Bay. I am also digging into software development. I am happy to meet you.</p>
-    <ul>
-      <li><a href="https://twitter.com/shieldsworks">Twitter</a></li>
-      <li><a href="https://github.com/shieldsworks">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/casey-shields-034309294/">LinkedIn</a></li>
-      <!-- Add more links as needed -->
-    </ul>
-  </main>
+
+ <div id="header" class="container">
+      <div class="row">
+        <div id="avatar">
+          <img src="/img/profile_square.JPG" alt="Casey Shields" class="avatar" />
+        </div>
+        <div id="bio">
+          <h1>Casey Shields</h1>
+          <h2>I am a sergeant at the Contra Costa County Office of the Sheriff supervising the Special Victims Unit. I am a husband, father, and sailor on the San Francisco Bay.</h2>
+          <div id="links">
+            <a href="https://www.linkedin.com/in/casey-shields-034309294/"><img src="assets/inconmonstr-linkedin-4.svg" class="social_links"/></a>
+            <a href="https://twitter.com/shieldsworks"><img src="assets/ctwitter.svg" class="social_links" /></a>
+            <a href="https://github.com/shieldsworks"><img src="assets/cgithub.svg" class="social_links"/></a>
+            <a href="https://www.shieldsworks.com"><img src="assets/crss.svg" class="social_links" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
