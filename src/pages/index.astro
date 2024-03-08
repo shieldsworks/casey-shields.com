@@ -1,31 +1,69 @@
----
-// Frontmatter script area, where you can import components and define page-level JavaScript
-import Avatar from '../components/Avatar.astro';
----
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-<link rel="stylesheet" href="/styles/style.css">
-  <title>Casey Shields</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+    <title>Casey Shields</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100&display=swap');
+    </style>
 </head>
-<body>
 
- <div id="header" class="container">
-      <div class="row">
-        <div id="avatar">
-          <img src="/img/profile_square.JPG" alt="Casey Shields" class="avatar" />
-        </div>
-        <div id="bio">
-          <h1>Casey Shields</h1>
-          <h2>I am a sergeant at the Contra Costa County Office of the Sheriff supervising the Special Victims Unit. I am a husband, father, and sailor on the San Francisco Bay.</h2>
-          <div id="links">
-            <a href="https://www.linkedin.com/in/casey-shields-034309294/"><img src="assets/inconmonstr-linkedin-4.svg" class="social_links"/></a>
-            <a href="https://twitter.com/shieldsworks"><img src="assets/ctwitter.svg" class="social_links" /></a>
-            <a href="https://github.com/shieldsworks"><img src="assets/cgithub.svg" class="social_links"/></a>
-            <a href="https://www.shieldsworks.com"><img src="assets/crss.svg" class="social_links" /></a>
-          </div>
-        </div>
-      </div>
-    </div>
+<body>
+    <header class="site-header" role="banner">
+        <a href="https://casey-shields.com">Casey Shields</a>
+    </header>
+    <main role="main">
+        <article>
+            <p>
+                Hello. I'm Casey, and this is my little spot on the web.
+            </p>
+            <p>I have other sites for my
+                <a href="https://www.shieldsworks.com">photography</a>, <a
+                    href="https://www.skyriterchronicles.com">typewriters</a> and
+                <a href="https://www.sailingdash.com">sailing</a> using Squarespace or Wordpress, but this is a blog for
+                learning indie development, blockchain, crypto
+                and Web3. I am constantly searching for
+                additions to my RSS feed.
+            </p>
+            <br>
+            <p>
+
+                As a cop since 2007, my personal and professional commitments
+                encourage a
+                voice around peace, kindness, and protection of the most vulnerable. You may find that voice here, as
+                well.
+            </p>
+        </article>
+        <br>
+        <article>
+            <p>
+                Currently: Learning HTML, CSS and Javascript. This domain was purchased at Godaddy, the code was written
+                on
+                VSCode, pushed to Github, and deployed with the Netlify Starter plan (free). I tinker/code/write in my
+                spare
+                time, supported by Udemy and YouTube. I'm shooting for the cheapest, indieweb inspired,
+                coded-from-scratch, personal site. I hope we can connect... somehow..
+            </p>
+        </article>
+    </main>
+    <footer class="site-footer h-card" role="contentinfo">
+        <img class="u-photo" src="img/profile_square.JPG" alt="photo of Casey Shields">
+        <p class="p-note">
+            Cop in the Bay Area since 2007. Photographer, writer, and developer. Owner of ShieldsWorks, LLC.
+        </p>
+        <p>
+            No Instagram or Facebook, but you can find
+            me on <a href="https://twitter.com/ShieldsWorks">Twitter</a> and <a
+                href="https://github.com/shieldsworks">Github</a>. The best way to reach me is by
+            <a href="mailto:casey@shieldsworks.com">email.
+        </p>
+    </footer>
 </body>
+
 </html>
